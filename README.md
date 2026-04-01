@@ -26,4 +26,6 @@
 </p>
 
 ### 🐍 Snake Animation
-![snake gif](https://github.com/foleng/foleng/blob/output/github-contribution-grid-snake.svg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/foleng/foleng/output/github-contribution-grid-snake.svg" />
+</p>
