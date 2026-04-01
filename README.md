@@ -21,11 +21,8 @@
 
 ### 📊 GitHub Stats
 <p align="center">
-  <!-- 主卡片：强制显示 Stars，修复数字不显示问题 -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=foleng&show_icons=true&show_stars=1&include_all_commits=true&theme=radical" />
-  
-  <!-- 语言卡片：换回官方 V1 源，解决 null 错误 -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=foleng&layout=compact&theme=radical&langs_count=6&hide_border=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=foleng&show_icons=true&theme=radical" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=foleng&layout=compact&theme=radical&langs_count=6&hide_border=true" />
 </p>
 
 ### 🐍 Snake Animation
