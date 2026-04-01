@@ -21,9 +21,8 @@
 
 ### 📊 GitHub Stats
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=foleng&show_icons=true&show_stars=1&count_private=true&include_all_commits=true&theme=radical&hide=prs,issues,contribs" />
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=foleng&layout=compact&theme=radical&hide_langs_below=1" />
+  <img src="https://stats.justsong.cn/api/github?username=foleng&theme=radical&show_icons=true&count_private=true" />
+  <img src="https://stats.justsong.cn/api/top-langs/?username=foleng&layout=compact&theme=radical" />
 </p>
 
 ### 🐍 Snake Animation
