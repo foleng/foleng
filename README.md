@@ -21,8 +21,11 @@
 
 ### 📊 GitHub Stats
 <p align="center">
-  <img src="https://stats.justsong.cn/api/github?username=foleng&theme=radical&show_icons=true&count_private=true" />
-  <img src="https://stats.justsong.cn/api/top-langs/?username=foleng&layout=compact&theme=radical" />
+  <!-- 核心修复：去掉 count_private，增加 show_streak 让数据更全 -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=foleng&show_icons=true&show_stars=1&include_all_commits=true&show_streak=1&theme=radical" />
+  
+  <!-- 语言卡片：换回官方源，解决 null 问题 -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=foleng&layout=compact&theme=radical&langs_count=8&card_width=320" />
 </p>
 
 ### 🐍 Snake Animation
