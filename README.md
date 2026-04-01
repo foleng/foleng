@@ -21,11 +21,11 @@
 
 ### 📊 GitHub Stats
 <p align="center">
-  <!-- 核心修复：去掉 count_private，增加 show_streak 让数据更全 -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=foleng&show_icons=true&show_stars=1&include_all_commits=true&show_streak=1&theme=radical" />
+  <!-- 主卡片：强制显示 Stars，修复数字不显示问题 -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=foleng&show_icons=true&show_stars=1&include_all_commits=true&theme=radical" />
   
-  <!-- 语言卡片：换回官方源，解决 null 问题 -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=foleng&layout=compact&theme=radical&langs_count=8&card_width=320" />
+  <!-- 语言卡片：换回官方 V1 源，解决 null 错误 -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=foleng&layout=compact&theme=radical&langs_count=6&hide_border=true" />
 </p>
 
 ### 🐍 Snake Animation
