@@ -1,0 +1,27 @@
+name: Generate Snake Animation
+on:
+  schedule:
+    - cron: "0 0 * * *" # 每天 UTC 0 点自动更新（北京时间 8 点）
+  workflow_dispatch: # 支持手动触发
+  push:
+    branches:
+      - main # 推送到 main 分支时自动更新
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: foleng # 你的 GitHub 用户名，已经填好
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
