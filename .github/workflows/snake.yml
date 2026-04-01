@@ -7,21 +7,29 @@ on:
     branches:
       - main # 推送到 main 分支时自动更新
 
+# 关键：给 Actions 足够的权限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4 # 升级到最新版，解决认证问题
+
       - name: Generate Snake SVG
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: foleng # 你的 GitHub 用户名，已经填好
+          github_user_name: foleng
           outputs: |
             dist/github-contribution-grid-snake.svg
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v4 # 替换为更稳定的 Action，彻底解决权限问题
         with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output # 推送到 output 分支
